@@ -1,0 +1,25 @@
+body{
+background: linear-gradient(rgba(21, 21, 26, 0.5),rgba(0,0,50,0.5),url(kr8.jpg));;
+
+/* background-position: cover; */
+background-image: url(kr7.jpg);
+background-size: cover;
+
+}
+
+.login-box
+{
+    max-width: 700px;
+    float: none;
+    margin: 150px auto;
+}
+.login-left
+{
+    background: rgba(149, 149, 235, 0.972);
+    padding: 50px;
+}
+.login-right
+{
+    background: #fff;
+    padding: 50px;
+}

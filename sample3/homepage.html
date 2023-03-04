@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+    <link rel="manifest"
+		href="manifest.json">
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">GADGETZONE</label>
+      <ul>
+        <li><a href="sample4.html">HOME</a></li>
+        <li><a href="adminlogin.html">ABOUT US</a></li>
+        <li><a href="sample4.html">CONTACT US</a></li>
+       </ul>
+    </nav>
+    <section></section>
+    <script>
+      window.addEventListener('load', () => {
+      registerSW();
+      });
+    
+      // Register the Service Worker
+      async function registerSW() {
+      if ('serviceWorker' in navigator) {
+        try {
+        await navigator
+            .serviceworker
+            .register('serviceworker.js');
+        }
+        catch (e) {
+        console.log('SW registration failed');
+        }
+      }
+      }
+    </script>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
